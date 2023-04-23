@@ -1,0 +1,144 @@
+:root{
+  --color-1: #b9c1e2;
+  --color-2: #ff7394;
+  --color-3: #e1436f;
+  --color-4: #9f2d56;
+  --color-5:#3f2d66;
+  --color-6: #f3f3f3e4;
+  --color-7: #413e3e;
+}
+
+h2{
+  color: var(--color-2);
+  background-color: var(--color-6);
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding-top: 10px;
+  padding-bottom:10px ;
+  padding-left: 40px;
+}
+
+
+.bebidas_section01{
+  position:relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 30px;
+}
+.bebidas_article01{
+  background-color: var(--color-1);
+  width: 300px; /*ANCHO*/
+  height: 300px; /*ALTO*/
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  border: 8px solid var(--color-1); 
+}
+.comprar{
+  font-family:verdana;
+  height: 40px;
+  width: 90px;
+  position: absolute;
+  top: 200px;
+  left: 14px;
+  color: var(--color-6);
+  background-color: var(--color-7);
+  border: 2px solid var(--color-7);
+  border-radius: 10px ;
+}
+.comprar:active{
+  background-color: var(--color-2);
+}
+.h3{
+  font-size: 35px;
+  font-family: 'Lobster', cursive;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #413e3e;
+  /*color: var(--color-2); letras en rosado*/
+  color: var(--color-6); /*letras en gris*/
+  width: 320px;
+  height: 320px;
+  top: -43px;
+  left: -7px;
+  transition-duration: 1.2s;
+  z-index: 6;
+  border-radius: 20px;
+  cursor: default;
+  border: 10px  var(--color-7); 
+}
+.h3remove {
+  font-size: 35px;
+  font-family: 'Lobster', cursive;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* color: #413e3e; */
+  color: #9f2d56;
+  cursor: default;
+  width: 290px;
+  height: 0px;
+  /* opacity:0; */ /*SE DESVANECE*/
+  transition-duration: 1s;
+  top: -35px;
+  left: 3px;
+  z-index: 6;
+  border-radius: 20px;
+}
+
+h4{
+  font-family: 'Righteous', cursive;
+  font-size: 14px;
+  z-index: 990;
+  position:absolute;
+  text-align: left;
+  color: var(--color-5);
+  display:inline-flex;
+  top: 40px;
+  left: 6px;
+  z-index: 2;
+}
+.img_bebida{
+  position: relative;
+  width: 180px;
+  height: 180px;
+  top: 90px;
+  left: 120px;
+  z-index: 1;
+}
+
+.comida_section01{
+  position:relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.comida_article01{
+  background-color: var(--color-1);
+  width: 300px; /*ANCHO*/
+  height: 300px; /*ALTO*/
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  border: 8px solid var(--color-1); 
+
+}
+.img_comida{
+  position: relative;
+  height: 150px; /*ALTO*/
+  width: 180px; /*ANCHO*/
+  top: 130px;
+  left: 100px;
+  z-index: 1;
+}
