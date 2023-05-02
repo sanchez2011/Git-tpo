@@ -16,106 +16,235 @@
 <body>
   <heder></heder>
   <nav></nav>
-  <anside>
+  <anside class="anside_01">
     <h1>Conoce nuestros productos para disfrutar</h1>
-    <h2>Bebidas</h2>
+    <a class="coffe-shop" >
+      <span class="contador-shop">$0</span>
+      <svg class="coffe-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M88 0C74.7 0 64 10.7 64 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C120.5 112.3 128 119.9 128 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C119.5 47.7 112 40.1 112 24c0-13.3-10.7-24-24-24zM32 192c-17.7 0-32 14.3-32 32V416c0 53 43 96 96 96H288c53 0 96-43 96-96h16c61.9 0 112-50.1 112-112s-50.1-112-112-112H352 32zm352 64h16c26.5 0 48 21.5 48 48s-21.5 48-48 48H384V256zM224 24c0-13.3-10.7-24-24-24s-24 10.7-24 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C232.5 112.3 240 119.9 240 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C231.5 47.7 224 40.1 224 24z"/></svg>
+    </a>
+    <h2 class="nombreCategoria">Bebidas</h2>
+
+    <section class="section-compras hiddenMostrar">
+      <article class="contenedorDeProductos">
+        <span class="productosAgregados">
+          <!-- comentar de aca -->
+          <span class="productosyprecio">
+            <p class="cantidadDeProducto">0</p>
+            <p class="productosCafeteria">Cafe Expreso</p>
+            <a class="productoscreado">$1000</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  class="cross-icon" >
+              <path class="icon" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/>
+            </svg>
+            
+          </span>
+          <!-- hasta aca-->
+        </span>
+        <span class="cantidadTotal">
+          <p>Precio Total</p>
+          <p class="valorTotal">0</p>
+        </span>
+      </article>
+    </section>
+    
     <main class="bebidas_main01" >
-      <section class="bebidas_section01">
+      <section  id="bebidas_section01" class="section01">
         <article class="bebidas_article01">
           <h3 id="h3"class="h3">Espresso</h3>
           <img class='img_bebida' src="./img/expreso (1).png">
-          <button class="comprar">Comprar</button>
-          <h4>Concentrado con pequeña cantidad <br>cafe molido fino <br>Oscuro y espeso</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul>
+            <li class="caracteristicas_li">cafe oscuro</li>
+          </ul>
         </article>
         <article class="bebidas_article01">
-          <img class='img_bebida' src="./img/americano.png">
           <h3 id="h3"class="h3">Americano</h3>
-          <h4>CAFE AMERICANO<br>SABOR FUERTE</h4>
+          <img class='img_bebida' src="./img/americano.png">
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$2000</a>
+          <ul>
+            <li class="caracteristicas_li">agua </li>
+            <li class="caracteristicas_li">expresso</li>
+          </ul>
         </article>
         <article class="bebidas_article01">
           <h3 id="h3"class="h3">Capuchino</h3>
           <img class='img_bebida' src="./img/capuchino.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul>
+            <li class="caracteristicas_li">Espuma de leche </li>
+            <li class="caracteristicas_li">leche </li>
+            <li class="caracteristicas_li">expresso</li>
+          </ul>
         </article>
         <article class="bebidas_article01">
           <h3 id="h3"class="h3">Latte</h3>
           <img class='img_bebida' src="./img/latte.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul>
+            <li class="caracteristicas_li">Espuma de leche</li>
+            <li class="caracteristicas_li">leche</li>
+            <li class="caracteristicas_li">expresso</li>
+          </ul>
         </article>
         <article class="bebidas_article01">
           <h3 id="h3"class="h3">Ice Coffe</h3>
           <img class='img_bebida' src="./img/iced coffe.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul>
+            <li class="caracteristicas_li">leche</li>
+            <li class="caracteristicas_li">hielo</li>
+            <li class="caracteristicas_li">expresso frio</li>
+          </ul>
         </article>
         <article class="bebidas_article01">
           <h3 id="h3"class="h3">Black Eye</h3>
           <img class='img_bebida' src="./img/blackeyes.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul>
+            <li class="caracteristicas_li">cafe suave</li>
+            <li class="caracteristicas_li">expresso doble</li>
+          </ul>        
         </article>
-        <!-- <article class="bebidas_article01">
+        <article class="bebidas_article01">
           <h3 id="h3"class="h3">Flat White</h3>
           <img class='img_bebida' src="./img/flat white.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul>
+            <li class="caracteristicas_li">nata de leche</li>
+            <li class="caracteristicas_li">leche</li>
+            <li class="caracteristicas_li">expresso</li>
+          </ul>     
         </article>
         <article class="bebidas_article01">
           <h3 id="h3"class="h3">Frappe</h3>
           <img class='img_bebida' src="./img/frappe.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul>
+            <li class="caracteristicas_li">crema de leche</li>
+            <li class="caracteristicas_li">leche</li>
+            <li class="caracteristicas_li">expresso frio</li>
+          </ul>     
         </article>
         <article class="bebidas_article01">
           <h3 id="h3"class="h3">Irish Coffe</h3>
           <img class='img_bebida' src="./img/irish coffe.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4> -->
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul>
+            <li class="caracteristicas_li">crema</li>
+            <li class="caracteristicas_li">whiskey</li>
+            <li class="caracteristicas_li">expresso</li>
+          </ul>     
         </article>
       </section>
     </main>
     <h2>Comida</h2>
+
     <main class="comida_main01">
-      <section class="comida_section01">
+      <section id="comida_section01" class="section01">
         <article class="comida_article01">
           <h3 id="h3"class="h3">Donas</h3>
           <img class='img_comida' src="./img/donas.png">
-          <h4>Donas<br>SABOR Caramelo</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <a class="descripcion-producto">3 unidades</a>
+          <ul class="ul_comida">
+            <li class="caracteristicas_li">chocolate</li>
+            <li class="caracteristicas_li">glasse</li>
+            <li class="caracteristicas_li">glasse y chips</li>
+          </ul>
         </article>
         <article class="comida_article01">
           <h3 id="h3"class="h3">Cookies</h3>
           <img class='img_comida'  src="./img/cookies.png">
-          <h4>Bagel<br>SABOR caramelo</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul class="ul_comida">
+            <li class="caracteristicas_li">galletitas de chocolate</li>
+            <li class="caracteristicas_li">chips de chocolate</li>
+          </ul>
         </article>
         <article class="comida_article01">
           <h3 id="h3"class="h3">Grisines</h3>
           <img class='img_comida'  src="./img/bread stick(grisines).png">
-          <h4>Salado<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <a class="descripcion-producto">5 unidades</a>
+          <ul class="ul_comida">
+            <li class="caracteristicas_li">grisines de queso</li>
+            <li class="caracteristicas_li">mix de especias</li>
+          </ul>
         </article>
         <article class="comida_article01">
-          <h3 id="h3"class="h3">Apple Pai</h3>
+          <h3 id="h3"class="h3">Tartas Manzana</h3>
           <img  class='img_comida' src="./img/apple pai.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <a class="descripcion-producto">1 porcion</a>
+          <ul class="ul_comida">
+            <li class="caracteristicas_li">trozos de mazana</li>
+            <li class="caracteristicas_li">canela</li>
+            <li class="caracteristicas_li">nueces</li>
+          </ul>
         </article>
         <article class="comida_article01">
           <h3 id="h3"class="h3">Bagel</h3>
-          <img class='img_comida'  src="./img/bagel.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <img class='img_comida' id="bagel_id" src="./img/bagel.png">
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <a class="descripcion-producto" id="bagel-descripcion-producto">3 porciones</a>
+          <ul class="ul_comida">
+            <li class="caracteristicas_li">Rellenas de crema</li>
+            <li class="caracteristicas_li">mix de semillas</li>
+            <li class="caracteristicas_li">nueces</li>
+          </ul>
         </article>
         <article class="comida_article01">
           <h3 id="h3"class="h3">Pancake</h3>
           <img class='img_comida'  src="./img/pancake.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul class="ul_comida">
+            <li class="caracteristicas_li">trozos de frutilla</li>
+            <li class="caracteristicas_li">sabor vainilla</li>
+          </ul>
         </article>
         <article class="comida_article01">
           <h3 id="h3"class="h3">Flan</h3>
           <img class='img_comida'  src="./img/flan.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <ul class="ul_comida">
+            <li class="caracteristicas_li">Caramelo</li>
+            <li class="caracteristicas_li">trozos de cerezas</li>
+          </ul>
         </article>
         <article class="comida_article01">
-          <h3 id="h3"class="h3">Factura</h3>
+          <h3 id="h3"class="h3">Facturas</h3>
           <img class='img_comida'  src="./img/facturas.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <a class="descripcion-producto">1 unidad</a>
+          <ul class="ul_comida">
+            <li class="caracteristicas_li">dulce de membrillo</li>
+          </ul>
         </article>
         <article class="comida_article01">
           <h3 id="h3"class="h3">Sandwich</h3>
           <img class='img_comida'  src="./img/sandwich.png">
-          <h4>CAFE ESPRESSO<br>SABOR FUERTE</h4>
+          <button class="comprar" id="btn">Comprar</button>
+          <a class="Price-one">$500</a>
+          <a class="descripcion-producto">1 unidad</a>
+          <ul class="ul_comida">
+            <li class="caracteristicas_li">jamon y queso</li>
+          </ul>
         </article>
       </section>
     </main>

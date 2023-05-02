@@ -6,9 +6,9 @@
   --color-5:#3f2d66;
   --color-6: #f3f3f3e4;
   --color-7: #413e3e;
-}
-
-h2{
+  }
+  
+  .nombreCategoria{
   color: var(--color-2);
   background-color: var(--color-6);
   border-top: 1px solid #999;
@@ -16,18 +16,118 @@ h2{
   padding-top: 10px;
   padding-bottom:10px ;
   padding-left: 40px;
-}
-
-
-.bebidas_section01{
+  }
+  /*modificacion listas de productos*/
+  .section-compras{
+  position: sticky;
+  display: flex;
+  z-index: 11;
+  top: 130px;
+  cursor:default;
+  }
+  .contenedorDeProductos{
+  position: absolute;
+  background-color: #e62e2e;
+  height: 20%;
+  width: 20%;
+  border-radius: 5px;
+  left: 65%;
+  z-index: 9;
+  }
+  .productosyprecio{
+  background-color: #ffffff;
+  height: 10px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 20px 15px; 
+  flex: 0.5;
+  border-bottom: 2px solid #000000;
+  z-index: 11;
+  }
+  .productoscreado{
+  position: absolute;
+  display: flex;
+  left: 70%;
+  } 
+  .productosCafeteria{
+  position: absolute;
+  display: flex;
+  left: 18%;
+  }
+  
+  .cantidadTotal{
+  background-color: #e62e2e;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  gap: 30px;
+  padding:10px;
+  }
+  .cross-icon{
+  padding: 4px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 20;
+  height: 20px;
+  width: 20px;
+  left: 5%;
+  cursor: pointer;
+  fill: #aa1010;
+  }
+  
+  .cross-icon:active{
+  height: 25px;
+  width: 25px;
+  left: 6%;
+  fill: #f73434;
+  }
+  .hiddenMostrar{
+  display: none;
+  }
+  /*=============Fin modificacion listas de productos=========*/
+  
+  /*====boton de caffe========*/
+  .coffe-shop{
+  position:sticky;
+  top: 0px;
+  left: 70%;  /*modificarlo @media{} */
+  color:rgb(0, 111, 207);
+  z-index: 7;
+  }
+  .contador-shop{
+  max-width: 10%;
+  position: absolute;
+  top: -5px;
+  z-index: 8;
+  left: 0px;
+  padding: 20px 70px;
+  background-color: #db9a9a;
+  border-radius: 13px;
+  cursor: default;
+  border: 1px solid var(--color-7);
+  }
+  .coffe-icon{
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  left: 20px;
+  position: absolute;
+  z-index: 9;
+  }
+  /*====Fin boton de cafe========*/
+  #bebidas_section01{
   position:relative;
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 20px;
   row-gap: 20px;
   column-gap: 30px;
-}
-.bebidas_article01{
+  }
+  .bebidas_article01{
   background-color: var(--color-1);
   width: 300px; /*ANCHO*/
   height: 300px; /*ALTO*/
@@ -35,8 +135,9 @@ h2{
   position: relative;
   border-radius: 20px;
   border: 8px solid var(--color-1); 
-}
-.comprar{
+  
+  }
+  .comprar{
   font-family:verdana;
   height: 40px;
   width: 90px;
@@ -47,11 +148,26 @@ h2{
   background-color: var(--color-7);
   border: 2px solid var(--color-7);
   border-radius: 10px ;
-}
-.comprar:active{
+  }
+  .comprar:active{
   background-color: var(--color-2);
-}
-.h3{
+  }
+  .Price-one{
+  font-size: 12px;
+  font-family:verdana;
+  text-align:center;
+  padding: 2px;
+  height: 15px;
+  width: 80px;
+  position: absolute;
+  top: 250px;
+  left: 14px;
+  color: var(--color-6);
+  background-color: var(--color-5);
+  border: 2px solid var(--color-7);
+  border-radius: 5px ;
+  }
+  .h3{
   font-size: 35px;
   font-family: 'Lobster', cursive;
   display: inline-flex;
@@ -65,16 +181,277 @@ h2{
   color: var(--color-6); /*letras en gris*/
   width: 320px;
   height: 320px;
-  top: -43px;
+  top: -42px; /*-43px*/
   left: -7px;
   transition-duration: 1.2s;
   z-index: 6;
   border-radius: 20px;
   cursor: default;
   border: 10px  var(--color-7); 
-}
-.h3remove {
+  }
+  
+  .h3remove {
   font-size: 35px;
+  font-family: 'Lobster', cursive;
+  display: inline-flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  
+  color: #9f2d56;
+  cursor: default;
+  width: 275px;
+  height: 0px;
+  top: -42px;
+  left: 9px;
+  z-index: 6;
+  transition-duration: 1s;
+  border-radius: 20px;
+  }
+  
+  .caracteristicas_li{
+  width: 200px;
+  font-family: 'Righteous', cursive;
+  font-size: 14px;
+  position:relative;
+  color: var(--color-5);
+  top: 40px;
+  left: -100%;
+  z-index: 2;
+  text-transform: uppercase;
+  font-weight:bold;
+  }
+  .img_bebida{
+  position: relative;
+  width: 180px;
+  height: 180px;
+  top: 90px;
+  left: 120px;
+  z-index: 1;
+  }
+  
+  #comida_section01{
+  position:relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 30px;
+  
+  }
+  .comida_article01{
+  background-color: var(--color-1);
+  width: 300px; /*ANCHO*/
+  height: 300px; /*ALTO*/
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  border: 8px solid var(--color-1); 
+  
+  }
+  .img_comida{
+  position: relative;
+  height: 140px; /*ALTO*/
+  width: 175px; /*ANCHO*/
+  top: 130px;
+  left: 124px;
+  z-index: 1;
+  }
+  #bagel_id{
+  position: relative;
+  height: 40%; /*ALTO*/
+  width: 70%; /*ANCHO*/
+  top: 45%;
+  left: 37%;
+  z-index: 1;
+  }
+  .descripcion-producto{
+  
+  font-family: 'Righteous', cursive;
+  font-size: 10px;
+  position:absolute;
+  color: var(--color-5);
+  top: 40px;
+  left: 40%;
+  z-index: 2;
+  text-transform: uppercase;
+  font-weight:bold;
+  }
+  #bagel-descripcion-producto{
+  
+  font-family: 'Righteous', cursive;
+  font-size: 10px;
+  position:absolute;
+  color: var(--color-5);
+  top: 40px;
+  z-index: 2;
+  text-transform: uppercase;
+  font-weight:bold;
+  left: 38%;
+  }
+  .ul_comida{
+  position:relative;
+  left: 1.7%;
+  }
+  
+  /*responsive in 800px*/
+  /*-------------------------------------------------*/
+  @media (max-width: 1000px)
+  {  
+  /*modificacion listas de productos*/
+  .section-compras{
+    position: sticky;
+    display: flex;
+    z-index: 11;
+    top: 130px;
+    cursor:default;
+  }
+  .contenedorDeProductos{
+    position: absolute;
+    background-color: #e62e2e;
+    height: 20%;
+    width: 40%;
+    border-radius: 5px;
+    left: 57%;
+    z-index: 9;
+  }
+  .productosyprecio{
+    background-color: #ffffff;
+    font-size: 13px;
+    height: 10px;
+    width: 155px;
+    display: flex;
+  
+    padding: 20px 15px; 
+    flex: 0.5;
+    border-bottom: 2px solid #000000;
+    z-index: 11;
+  }
+  .productoscreado{
+    position: absolute;
+    display: flex;
+    left: 115px;
+  } 
+  .productosCafeteria{
+    position: absolute;
+    display: flex;
+    left: 12%;
+  }
+  
+  .cantidadTotal{
+    font-size: 13px;
+    /* background-color: #000000; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 10px;
+    gap: 30px;
+    padding:10px;
+  }
+  
+  .cross-icon{
+    padding: 4px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 20;
+    height: 20px;
+    width: 20px;
+    left: 17px;
+    cursor: pointer;
+  }
+  
+  .cross-icon:active{
+    height: 25px;
+    width: 25px;
+    left: 6%;
+    fill: #f73434;
+  }
+  .hiddenMostrar{
+    display: none;
+  }
+  /*Fin modificacion listas de productos*/
+  /*carrito de valor*/
+  .coffe-shop{
+  
+  top:0px;
+  left: 59%;  /*modificarlo @media{}*/
+  
+  }
+  .contador-shop{
+  max-width: 10px;
+  font-size: 12px;
+  top: -4px;
+  padding: 20px 70px;
+  
+  }
+  .coffe-icon{
+  top: 12px;
+  left: 20px;
+  }
+  /*Fin carrito de valor*/
+  .bebidas_section01{
+  position:relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  row-gap: 10px;
+  column-gap: 20px;
+  }
+  .bebidas_article01{
+  background-color: var(--color-1);
+  width: 210px; /*ANCHO*/
+  height: 200px; /*ALTO*/
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  border: 8px solid var(--color-1); 
+  }
+  .comprar{
+  top: 60%;
+  font-size: 8px;
+  height: 10%;
+  width: 35%;
+  left: 5%;
+  }
+  .comprar:active{
+  background-color: var(--color-2);
+  }
+  .Price-one{
+  font-size: 10px;
+  left: 11%;
+  width: 20%;
+  top: 72%;
+  }
+  
+  .h3{
+  font-size: 25px;
+  font-family: 'Lobster', cursive;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #413e3e;
+  /*color: var(--color-2); letras en rosado*/
+  color: var(--color-6); /*letras en gris*/
+  width: 225px;
+  height: 220px;
+  top: -32px;
+  left: -7px;
+  transition-duration: 1.2s;
+  z-index: 6;
+  border-radius: 20px;
+  cursor: default;
+  border: 10px  var(--color-7); 
+  }
+  .h3remove {
+  font-size: 25px;
   font-family: 'Lobster', cursive;
   display: inline-flex;
   flex-wrap: wrap;
@@ -85,19 +462,19 @@ h2{
   /* color: #413e3e; */
   color: #9f2d56;
   cursor: default;
-  width: 290px;
+  width: 180px;/*190px*/
   height: 0px;
   /* opacity:0; */ /*SE DESVANECE*/
   transition-duration: 1s;
-  top: -35px;
-  left: 3px;
+  top: -32px; 
+  left: 10px;
   z-index: 6;
   border-radius: 20px;
-}
-
-h4{
+  }
+  
+  h4{
   font-family: 'Righteous', cursive;
-  font-size: 14px;
+  font-size: 12px;
   z-index: 990;
   position:absolute;
   text-align: left;
@@ -106,39 +483,273 @@ h4{
   top: 40px;
   left: 6px;
   z-index: 2;
-}
-.img_bebida{
+  }
+  .img_bebida{
   position: relative;
-  width: 180px;
-  height: 180px;
-  top: 90px;
-  left: 120px;
+  height: 55%; /*ALTO*/
+  width: 50%; /*ANCHO*/
+  top: 40%;
+  left: 48%;
   z-index: 1;
-}
-
-.comida_section01{
+  }
+  #bebidas_section01{
   position:relative;
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 20px;
-  column-gap: 20px;
-}
-.comida_article01{
+  column-gap: 30px;
+  }
+  #comida_section01{
+  position:relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 30px;
+  
+  }
+  .comida_article01{
   background-color: var(--color-1);
-  width: 300px; /*ANCHO*/
-  height: 300px; /*ALTO*/
+  width: 210px; /*ANCHO*/
+  height: 200px; /*ALTO*/
   display: flex;
   position: relative;
   border-radius: 20px;
   border: 8px solid var(--color-1); 
-
-}
-.img_comida{
+  
+  }
+  .img_comida{
   position: relative;
-  height: 150px; /*ALTO*/
-  width: 180px; /*ANCHO*/
-  top: 130px;
-  left: 100px;
+  height: 42%; /*ALTO*/
+  width: 110%; /*ANCHO*/
+  top: 45%;
+  left: 50%;
   z-index: 1;
-}
+  }
+  #bagel_id{
+  position: relative;
+  height: 35%; /*ALTO*/
+  width: 55%; /*ANCHO*/
+  top: 45%;
+  left: 47%;
+  z-index: 1;
+  }
+  .descripcion-producto{
+  font-size: 8px;
+  top: 13%;
+  }
+  #bagel-descripcion-producto{
+  font-size: 8px;
+  top: 13%;
+  left: 36%;
+  }
+  .caracteristicas_li{
+  width: 20px;
+  font-size: 9px;
+  top: 15%;
+  left: -130px;
+  }
+  .ul_comida{
+  position:relative;
+  left: 1.7%;
+  }
+  }
+  
+  @media (max-width: 500px)
+  {  
+  #bebidas_section01{
+    row-gap: 8px;
+    column-gap: 3px;
+    padding: 0px;
+  }
+  .bebidas_article01{
+    width: 110px; /*ANCHO*/
+    height: 105px; /*ALTO*/
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 8px solid var(--color-1); 
+  }
+  #comida_section01{
+    row-gap: 8px;
+    column-gap: 5px;
+  }
+  .comida_article01{
+    width: 110px; /*ANCHO*/
+    height: 105px; /*ALTO*/
+  }
+  .h3{
+  font-size: 10px;
+  font-family: 'Lobster', cursive;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #413e3e;
+  /*color: var(--color-2); letras en rosado*/
+  color: var(--color-6); /*letras en gris*/
+  width: 125px;
+  height: 125px;
+  top: -20px;
+  left: -7px;
+  transition-duration: 1.2s;
+  z-index: 6;
+  border-radius: 20px;
+  cursor: default;
+  border: 10px  var(--color-7); 
+  }
+  .h3remove {
+  font-size: 10px;
+  font-family: 'Lobster', cursive;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* color: #413e3e; */
+  color: #9f2d56;
+  cursor: default;
+  width: 95px;
+  height: 0px;
+  /* opacity:0; */ /*SE DESVANECE*/
+  transition-duration: 1s;
+  top: -17px;
+  left: 7px;
+  z-index: 6;
+  border-radius: 5px;
+  }
+  .caracteristicas_li{
+  width: 50px;
+  font-size: 6px;
+  top: 3%;
+  left: -180%;
+  }
+  .descripcion-producto{
+  font-size: 6px;
+  top: 6%;
+  }
+  #bagel-descripcion-producto{
+  font-size: 6px;
+  top: 6%;
+  left: 30%;
+  }
+  .comprar{
+  font-size: 7px;
+  height: 20%;
+  width: 45%;
+  top: 60%;
+  left: 2%;
+  }
+  
+  .Price-one{
+  font-size: 7px;
+  width: 20%;
+  height: 10%;
+  top: 82%;
+  left: 11%;
+  }
+  /*carrito de valor*/
+  .coffe-shop{
+  
+  top:0px;
+  left: 50%;  /*modificarlo @media{}*/
+  
+  }
+  .contador-shop{
+  max-width: 10px;
+  font-size: 12px;
+  top: 5px;
+  padding: 10px 50px;
+  
+  }
+  .coffe-icon{
+  width: 15px;
+  top: 11px;
+  left: 20px;
+  }
+  /*------------------------*/
+  .section-compras{
+  position: sticky;
+  display: flex;
+  z-index: 11;
+  top: 170px;
+  cursor:default;
+  }
+  
+  .contenedorDeProductos{
+  position: absolute;
+  background-color: #e62e2e;
+  height: 20%;
+  width: 40%;
+  border-radius: 5px;
+  top: -22px;
+  left: 49%;
+  z-index: 9;
+  }
+  .productosyprecio{
+  background-color: #ffffff;
+  font-size: 8px;
+  height: 10px;
+  width: 108px;
+  display: flex;
+  
+  padding: 10px 15px; 
+  flex: 0.5;
+  border-bottom: 2px solid #000000;
+  z-index: 11;
+  }
+  .productoscreado{
+  position: absolute;
+  display: flex;
+  left: 85px;
+  } 
+  .productosCafeteria{
+  position: absolute;
+  display: flex;
+  left: 19%;
+  }
+  
+  .cantidadTotal{
+  font-size: 8px;
+  background-color: #e62e2e;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 118px;
+  gap: 30px;
+  padding:3px 10px;
+  }
+  
+  .cross-icon{
+  padding: 4px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 20;
+  height: 15px;
+  width: 15px;
+  left: 15%;
+  cursor: pointer;
+  fill: #aa1010;
+  }
+  
+  .cross-icon:active{
+  height: 15px;
+  width: 15px;
+  left: 6%;
+  fill: #8d0808;
+  }
+  .hiddenMostrar{
+  display: none;
+  }
+  
+  }
+  @media (max-width: 355px) {
+  .section-compras{
+    top: 200px;
+  }
+  }
