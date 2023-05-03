@@ -342,7 +342,7 @@
   
   .cantidadTotal{
     font-size: 13px;
-    /* background-color: #000000; */
+    background-color: #0921f3;
     position: relative;
     display: flex;
     justify-content: center;
@@ -715,7 +715,7 @@
   
   .cantidadTotal{
   font-size: 8px;
-  background-color: #e62e2e;
+  background-color: #f3cf00;
   position: relative;
   display: flex;
   justify-content: center;
@@ -759,4 +759,7 @@
     top: 240px;
     cursor:default;
     }
+    .cantidadTotal{
+      background-color: #030000;
+      }
   }
