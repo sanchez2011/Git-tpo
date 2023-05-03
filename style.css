@@ -108,6 +108,7 @@
   border-radius: 13px;
   cursor: default;
   border: 1px solid var(--color-7);
+  box-shadow: 0 2px 15px var(--color-7);
   }
   .coffe-icon{
   width: 20px;
@@ -623,10 +624,10 @@
   border-radius: 5px;
   }
   .caracteristicas_li{
-  width: 50px;
+  width: 80px;
   font-size: 6px;
   top: 3%;
-  left: -180%;
+  left: -85px;
   }
   .descripcion-producto{
   font-size: 6px;
@@ -685,7 +686,7 @@
   height: 20%;
   width: 40%;
   border-radius: 5px;
-  margin-top: -10px;
+  margin-top: 10px;
   top: 20px;
   left: 49%;
   z-index: 9;
@@ -714,7 +715,7 @@
   
   .cantidadTotal{
   font-size: 8px;
-  background-color: #31f300;
+  background-color: #c72488;
   position: relative;
   display: flex;
   justify-content: center;
