@@ -6,6 +6,8 @@
   --color-5:#3f2d66;
   --color-6: #f3f3f3e4;
   --color-7: #413e3e;
+  --color-8: #c7aa6c;
+  --color-9: #e62e2e;
   }
   
   .nombreCategoria{
@@ -56,7 +58,7 @@
   }
   
   .cantidadTotal{
-  background-color: #e62e2e;
+  background-color: var(--color-8);
   position: relative;
   display: flex;
   justify-content: center;
@@ -64,6 +66,7 @@
   height: 10px;
   gap: 30px;
   padding:10px;
+
   }
   .cross-icon{
   padding: 4px;
@@ -93,7 +96,7 @@
   position:sticky;
   top: 0px;
   left: 70%;  /*modificarlo @media{} */
-  color:rgb(207, 15, 15);
+  color:#292222;
   z-index: 7;
   font-weight:900;
   }
@@ -108,7 +111,7 @@
   border-radius: 13px;
   cursor: default;
   border: 1px solid var(--color-7);
-  box-shadow: 0 2px 15px var(--color-7);
+  box-shadow: 0px 0px 14px var(--color-7);
   
   }
   .coffe-icon{
@@ -343,7 +346,6 @@
   
   .cantidadTotal{
     font-size: 13px;
-    background-color: #0921f3;
     position: relative;
     display: flex;
     justify-content: center;
@@ -522,10 +524,10 @@
   }
   .img_comida{
   position: relative;
-  height: 42%; /*ALTO*/
-  width: 110%; /*ANCHO*/
+  height: 88px; /*ALTO*/
+  width: 120px; /*ANCHO*/
   top: 45%;
-  left: 50%;
+  left: 90px;
   z-index: 1;
   }
   #bagel_id{
@@ -546,7 +548,7 @@
   left: 36%;
   }
   .caracteristicas_li{
-  width: 20px;
+  width: 100px;
   font-size: 9px;
   top: 15%;
   left: -130px;
@@ -714,7 +716,6 @@
   
   .cantidadTotal{
   font-size: 8px;
-  background-color: #b40d0d;
   position: relative;
   display: flex;
   justify-content: center;
@@ -758,7 +759,4 @@
     top: 240px;
     cursor:default;
     }
-    .cantidadTotal{
-      background-color: #da3d16;
-      }
   }
