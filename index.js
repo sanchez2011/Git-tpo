@@ -69,7 +69,7 @@ productoLista.addEventListener('click', e =>{
 //     }
 // });
 productoLista.addEventListener('click', (e) =>{
-    if(e.target.classList.contains('icon')){
+    if(e.target.classList.contains('icon') || e.target.classList.contains('cross-icon')){
         const productos = e.target.parentElement;
         const product = productos.parentElement;
         const title = product.querySelector('.productosCafeteria').textContent;
@@ -81,6 +81,7 @@ productoLista.addEventListener('click', (e) =>{
     agregarElemento()
     }
 });
+
 const agregarElemento = () =>{
     prodAgregados.innerHTML = '';
     let total = 0; 
