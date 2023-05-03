@@ -752,4 +752,11 @@
   .section-compras{
     top: 200px;
   }
+  .section-compras{
+    position: sticky;
+    display: flex;
+    z-index: 11;
+    top: 240px;
+    cursor:default;
+    }
   }
