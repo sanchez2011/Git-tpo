@@ -69,7 +69,8 @@ productoLista.addEventListener('click', e =>{
 //     }
 // });
 productoLista.addEventListener('click', (e) =>{
-    if(e.target.classList.contains('icon') || e.target.classList.contains('cross-icon')){
+    if(e.target.classList.contains('icon')){
+        console.log('is icon')
         const productos = e.target.parentElement;
         const product = productos.parentElement;
         const title = product.querySelector('.productosCafeteria').textContent;
@@ -79,8 +80,26 @@ productoLista.addEventListener('click', (e) =>{
         );
         
     agregarElemento()
+    }if(e.target.classList.contains('cross-icon')){
+        console.log('is cross-icon')
+        const product = e.target.parentElement;
+        const title = product.querySelector('.productosCafeteria').textContent;
+
+        allProducts = allProducts.filter(
+            info => info.title !== title
+        );
+        
+    agregarElemento()
     }
-});
+    }
+);
+
+
+
+
+
+
+
 
 const agregarElemento = () =>{
     prodAgregados.innerHTML = '';

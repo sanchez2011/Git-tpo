@@ -686,7 +686,7 @@
   height: 20%;
   width: 40%;
   border-radius: 5px;
-  top: -22px;
+  top: -02px;
   left: 49%;
   z-index: 9;
   }
@@ -760,6 +760,6 @@
     cursor:default;
     }
     .cantidadTotal{
-      background-color: #030000;
+      background-color: #da3d16;
       }
   }
