@@ -27,7 +27,6 @@
   }
   .contenedorDeProductos{
   position: absolute;
-  background-color: #e62e2e;
   height: 20%;
   width: 20%;
   border-radius: 5px;
@@ -94,8 +93,9 @@
   position:sticky;
   top: 0px;
   left: 70%;  /*modificarlo @media{} */
-  color:rgb(0, 111, 207);
+  color:rgb(207, 15, 15);
   z-index: 7;
+  font-weight:900;
   }
   .contador-shop{
   max-width: 10%;
@@ -109,6 +109,7 @@
   cursor: default;
   border: 1px solid var(--color-7);
   box-shadow: 0 2px 15px var(--color-7);
+  
   }
   .coffe-icon{
   width: 20px;
@@ -311,7 +312,6 @@
   }
   .contenedorDeProductos{
     position: absolute;
-    background-color: #e62e2e;
     height: 20%;
     width: 40%;
     border-radius: 5px;
@@ -678,16 +678,15 @@
   display: flex;
   z-index: 11;
   cursor:default;
+  top:180px;
   }
 
   .contenedorDeProductos{
   position: absolute;
-  background-color: #e62e2e;
   height: 20%;
   width: 40%;
   border-radius: 5px;
   margin-top: -20px;
-  top: 30px;
   left: 49%;
   z-index: 9;
   }
@@ -715,7 +714,7 @@
   
   .cantidadTotal{
   font-size: 8px;
-  background-color: #c72488;
+  background-color: #b40d0d;
   position: relative;
   display: flex;
   justify-content: center;
