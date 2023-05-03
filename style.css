@@ -704,7 +704,7 @@
   .productoscreado{
   position: absolute;
   display: flex;
-  left: 85px;
+  left: 95px;
   } 
   .productosCafeteria{
   position: absolute;
@@ -714,7 +714,7 @@
   
   .cantidadTotal{
   font-size: 8px;
-  background-color: #f3cf00;
+  background-color: #31f300;
   position: relative;
   display: flex;
   justify-content: center;
