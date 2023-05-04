@@ -763,18 +763,18 @@
   }
   
   }
-  @media (max-width: 400px) {
+@media (max-width: 400px) {
 .section-compras{
-  top: 200px;
+top: 200px;
 }
 .section-compras{
-  position: sticky;
-  display: flex;
-  z-index: 11;
-  top:210px;
-  cursor:default;
+position: sticky;
+display: flex;
+z-index: 11;
+top:210px;
+cursor:default;
 }
-  
+
 .contenedorDeProductos{
 position: absolute;
 height: 20%;
@@ -783,5 +783,8 @@ border-radius: 5px;
 margin-top: -20px;
 left: 170px;
 z-index: 9;
+}
+.hiddenMostrar{
+display: none;
 }
   }
