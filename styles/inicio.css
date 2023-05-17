@@ -213,6 +213,7 @@ html {
 	display: flex;
 	justify-content: center;
 	gap: 5px;
+	Font-size : 12px;
 	
 }
 .categoríasMejores > section{
@@ -234,14 +235,17 @@ html {
 	align-items: center;
 }
 .imgCategoria{
-	left: 10px;
-	width: 122px;
-	height: 111px;
+	
 	margin-left: 29px;
+	Max-width: 100%;
+   	max-height: 50%;
+	margin-left: 11 px 5 px;
 }
 .imgCategoriaComida{
-	width: 148px;
-	height: 113px;
+
+	Max-width: 100%;
+	max-height: 40%;
+	Margin: 23px 2px;
 	}
 .textDescripcion{
 margin: 0px 12px;
@@ -254,15 +258,28 @@ justify-content: center;
 gap: 4px;
 }
 .articleCard > section{
-	color: #faecec;
+	
 	display:flex;
-	background-color: rgba(123, 124, 122, 0.411);
+	
 	text-align: center;
 	align-items: center;
 	justify-content: center;
 	font-weight: bold;
 	border: 2px #000 solid;
-	width: 250px;
+	font-size: 10px;
+	Padding :10px;
+    height: 60px;
 	height: 60px;
 	border-radius: 15px;
 }
+#itms {
+position:relative;
+top: -10px;
+right: 6px;
+
+}
+
+
+
+	
+
