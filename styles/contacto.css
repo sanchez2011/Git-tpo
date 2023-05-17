@@ -1,0 +1,90 @@
+:root{
+    --primary-color: #c7a17a;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    background-image: url("../img/imagen_cafe_4.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 1rem;
+}
+
+/*.container_form{
+    margin-top: 1rem;
+    border: 1px solid red;
+    width: 450px;
+    margin: auto;
+    /*background-color: rgba(0,0,0,0.4);
+}*/
+
+
+form{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    
+}
+
+.titulo{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#enviar{
+    background: #31384a;
+    color: var(--background-color);
+    font-weight: 600;
+    padding: 1rem;
+    width: 80%;
+}
+
+#enviar:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+#mensajeError{
+    color: yellow;
+    font-weight: 800;
+}
+
+#mensajeExito{
+    color: cyan;
+    font-weight: 800;
+}
+@media (min-width:480px){
+    form{
+        width: 450px;
+    }
+} 
