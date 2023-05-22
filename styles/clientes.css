@@ -1,0 +1,94 @@
+:root{
+    --primary-color: #c7a17a;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+}
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/imagen_cafe_4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cliente{
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.clienteSuperior{
+    background: #1d160c7e;
+    padding: 0.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.clienteSuperior img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.clienteSuperior .clienteInfo{
+    margin-top: 0.5rem;
+}
+
+.clienteInferior{
+    padding: 1rem 1rem 0.5rem;
+}
+
+.clienteDatos{
+    background-color: #fff;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+}
+
+.fa-solid{
+    margin-right: 0.5rem;
+    color: var(--dark-color);
+}
+
+.botonCliente{
+    margin-top: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+#cliente{
+    background: #31384a;
+    color: var(--background-color);
+    font-weight: 600;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+}
+
+#cliente:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
