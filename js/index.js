@@ -26,6 +26,7 @@ header.innerHTML =
             <li><a href="./historia.html">Historia</a></li>
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./clientes.html">Clientes</a></li>
         </ul>
     </nav>
 </section>
