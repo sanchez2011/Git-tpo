@@ -127,5 +127,15 @@ const agregarElemento = () =>{
     valorTotal.innerText = `$${total}`
     contadorShop.innerText = `$${total}`
 }
+setTimeout(function()
+		{  
+        document.querySelector(".infoAdicional").innerHTML="";
+        document.querySelector('.contador-shop').style.removeProperty('border');
+        var h3removedor = document.querySelectorAll('.h3');
+        for (let h3remov of h3removedor){
+            h3remov.style.border = '';
+        }
 
-
+                
+    
+			},10000)

@@ -12,7 +12,18 @@
   --dark-color: #151515;
 
   }
-  
+  .infoAdicional{
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    color: #dd0303;
+    left: 30%;
+    top: 17%;
+  }
+  .infoI{
+    width: 17px;
+    padding: 0px 8px;
+  }
   .nombreCategoria{
   color: var(--color-2);
   background-color: var(--color-6);
@@ -22,6 +33,9 @@
   padding-bottom:10px ;
   padding-left: 40px;
   }
+.encabezadoTitle{
+  padding-left: 40px;
+}
   /*modificacion listas de productos*/
   .section-compras{
   position: sticky;
@@ -102,6 +116,7 @@
   color:#292222;
   z-index: 7;
   font-weight:900;
+  cursor: pointer;
   }
   .contador-shop{
   max-width: 10%;
@@ -112,7 +127,6 @@
   padding: 20px 70px;
   background-color: #db9a9a;
   border-radius: 13px;
-  cursor: default;
   border: 1px solid var(--color-7);
   box-shadow: 0px 0px 14px var(--color-7);
   
@@ -157,6 +171,7 @@
   background-color: var(--color-7);
   border: 2px solid var(--color-7);
   border-radius: 10px ;
+  cursor: pointer;
   }
   .comprar:active{
   background-color: var(--color-2);
@@ -195,7 +210,7 @@
   transition-duration: 0.9s;
   z-index: 6;
   border-radius: 20px;
-  cursor: default;
+  cursor: pointer;
   border: 10px  var(--color-7); 
   }
   
@@ -210,7 +225,7 @@
   position: absolute;
   
   color: #9f2d56;
-  cursor: default;
+  cursor: pointer;
   width: 275px;
   height: 0px;
   top: -9px;
